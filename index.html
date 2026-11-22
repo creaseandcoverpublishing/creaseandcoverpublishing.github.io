@@ -54,8 +54,11 @@
     .hero { grid-template-columns:1.05fr 0.95fr; align-items:center; padding:40px; gap:40px; }
     h1 { font-size:40px; }
     .cover { max-width:360px; justify-self:center; }
-    .spreads { grid-template-columns:1fr 1fr 1fr; gap:16px; }
+    .spreads { grid-template-columns:1fr 1fr; gap:16px; }
   }
+  .spread { margin:0; min-width:0; }
+  .spread figcaption { font-size:12px; color:var(--ink2); margin-top:8px; }
+  @media (min-width:768px) { .spread-lead { grid-column:1 / -1; } }
 </style>
 </head>
 <body>
@@ -79,11 +82,15 @@
   <section>
     <h2>Inside the book</h2>
     <div class="spreads">
-      <img src="9-spread-bradman.jpg" alt="Sample spread: Bradman's signed The Art of Cricket, a 1938 cricket album, autographs and a Bradman Museum cap">
-      <img src="10-spread-1964.jpg" alt="Sample spread: the 1964 Australian tour programme, with team photographs and signatures">
-      <img src="11-spread-botham.jpg" alt="Sample spread: Botham and Border, a signed Steve Waugh photograph and Botham's 1983/84 touring blazer">
+      <figure class="spread spread-lead"><a href="1-spread-04-05.jpg" target="_blank" rel="noopener"><img src="1-spread-04-05.jpg" alt="Book preview, printed pages 4-5"></a><figcaption>Pages 4-5</figcaption></figure>
+      <figure class="spread"><a href="2-spread-22-23.jpg" target="_blank" rel="noopener"><img src="2-spread-22-23.jpg" alt="Book preview, printed pages 22-23"></a><figcaption>Pages 22-23</figcaption></figure>
+      <figure class="spread"><a href="3-spread-24-25.jpg" target="_blank" rel="noopener"><img src="3-spread-24-25.jpg" alt="Book preview, printed pages 24-25"></a><figcaption>Pages 24-25</figcaption></figure>
+      <figure class="spread"><a href="4-spread-34-35.jpg" target="_blank" rel="noopener"><img src="4-spread-34-35.jpg" alt="Book preview, printed pages 34-35"></a><figcaption>Pages 34-35</figcaption></figure>
+      <figure class="spread"><a href="5-spread-50-51.jpg" target="_blank" rel="noopener"><img src="5-spread-50-51.jpg" alt="Book preview, printed pages 50-51"></a><figcaption>Pages 50-51</figcaption></figure>
+      <figure class="spread"><a href="6-spread-64-65.jpg" target="_blank" rel="noopener"><img src="6-spread-64-65.jpg" alt="Book preview, printed pages 64-65"></a><figcaption>Pages 64-65</figcaption></figure>
+      <figure class="spread"><a href="7-spread-96-97.jpg" target="_blank" rel="noopener"><img src="7-spread-96-97.jpg" alt="Book preview, printed pages 96-97"></a><figcaption>Pages 96-97</figcaption></figure>
     </div>
-    <p class="caption">Original spreads from the book: Bradman's signed The Art of Cricket and a 1938 album, the signed 1964 Australian tour programme, and Botham's 1983/84 touring blazer.</p>
+    <p class="caption">Seven selected spreads from the book. Tap an image to enlarge it.</p>
   </section>
 
   <section>
